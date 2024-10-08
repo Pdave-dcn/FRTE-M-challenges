@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="style/style.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <section class="form">
+      <div class="form-container">
+        <div class="popup hidden">
+          <span class="title">Message Sent!</span>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+        <form method="get" action="" id="my-form">
+          <h1>Contact Us</h1>
+          <div class="name-container">
+            <div class="name">
+              <label for="name1">First Name</label>
+              <input
+                type="text"
+                name="name1"
+                id="name1"
+                class="error-input js-first-name active-hover-state"
+              />
+              <div class="error js-error"></div>
+            </div>
+            <div class="name">
+              <label for="name2">Last Name</label>
+              <input
+                type="text"
+                name="name2"
+                id="name2"
+                class="error-input js-last-name"
+              />
+              <div class="error js-error"></div>
+            </div>
+          </div>
+          <div class="email-class">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="error-input js-email"
+            />
+            <div class="error js-email-error"></div>
+          </div>
+          <div class="selection-container">
+            <p>Query Type</p>
+            <div class="options-container">
+              <div class="options js-radio-option js-option-1">
+                <input
+                  type="radio"
+                  name="option"
+                  id="radio1"
+                  value="1"
+                  class="js-radio-button"
+                />
+                <label for="radio1">General Enquery</label>
+              </div>
+              <div class="options js-radio-option js-option-2">
+                <input
+                  type="radio"
+                  name="option"
+                  id="radio2"
+                  value="2"
+                  class="js-radio-button"
+                />
+                <label for="radio2">Support Request</label>
+              </div>
+            </div>
+            <div class="error js-option-error"></div>
+          </div>
+          <div class="message-class">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="error-input js-message-class"
+            ></textarea>
+            <div class="error js-error"></div>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              name="consent"
+              id="consent"
+              class="js-checkbox"
+            />
+            <label for="consent">I consent to being contact by the team</label>
+            <div class="error js-checkbox-error"></div>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Pdave-dcn</a>.
+    </div>
+    <script src="scripts/main.js" type="module"></script>
+  </body>
+</html>
